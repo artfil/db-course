@@ -1,0 +1,10 @@
+create sequence if not exists user_seq;
+create sequence if not exists company_seq;
+create sequence if not exists link_seq;
+create sequence if not exists contact_seq;
+create sequence if not exists vacancy_seq;
+create sequence if not exists test_seq;
+create sequence if not exists test_block_seq;
+create sequence if not exists test_block_answer_seq;
+create sequence if not exists user_answer_seq;
+create sequence if not exists result_seq;
