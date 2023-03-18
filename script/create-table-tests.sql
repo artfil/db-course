@@ -3,7 +3,6 @@ create table if not exists tests
     id                         bigint      not null
         constraint tests_pkey primary key,
     user_id                    bigint      not null,
-    priority                   integer     not null,
     name                       varchar(50) not null,
     time_limit                 time        not null,
     description                text,

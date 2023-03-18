@@ -7,7 +7,7 @@ create table if not exists test_block_answers
     -- simple test block
     answer        text, -- free answer test block
     answer_index  integer,
-    correct       boolean,
+    correct       boolean not null,
     -- match test block
     match_answer  text,
     foreign key (test_block_id) references test_blocks (id) on delete cascade

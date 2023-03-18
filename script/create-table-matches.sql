@@ -1,7 +1,11 @@
 create table if not exists matches
 (
-    hr_user        bigint not null,
-    candidate_user bigint not null,
-    constraint matches_idx unique (hr_user, candidate_user),
-    foreign key (hr_user) references users (id) on delete cascade
+    id           bigint                  not null
+        constraint matches_pkey primary key,
+    hr_id        bigint                  not null,
+    candidate_id bigint                  not null,
+    match_date   timestamp default now() not null,
+    constraint matches_idx unique (hr_id, candidate_id),
+    foreign key (hr_id) references users (id) on delete cascade,
+    foreign key (candidate_id) references users (id) on delete cascade
 );

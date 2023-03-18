@@ -8,3 +8,5 @@ create sequence if not exists test_block_seq;
 create sequence if not exists test_block_answer_seq;
 create sequence if not exists user_answer_seq;
 create sequence if not exists result_seq;
+create sequence if not exists match_seq;
+create sequence if not exists vacancy_test_seq;
