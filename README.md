@@ -8,6 +8,7 @@ Course practice - work with relational and non-relational databases
 
 - <a href="task/1.md">1</a>
 - <a href="task/2.md">2</a>
+- <a href="task/3.md">3</a>
 
 ***
 
