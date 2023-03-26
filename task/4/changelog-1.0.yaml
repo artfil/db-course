@@ -1,0 +1,135 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: Filimonov Artem
+      comment: "create table users"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-users.sql
+
+  - changeSet:
+      id: "2"
+      author: Filimonov Artem
+      comment: "create table user_roles"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-user-roles.sql
+
+  - changeSet:
+      id: "3"
+      author: Filimonov Artem
+      comment: "create table matches"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-matches.sql
+
+  - changeSet:
+      id: "4"
+      author: Filimonov Artem
+      comment: "create table companies"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-companies.sql
+
+  - changeSet:
+      id: "5"
+      author: Filimonov Artem
+      comment: "create table contacts"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-contacts.sql
+
+  - changeSet:
+      id: "6"
+      author: Filimonov Artem
+      comment: "create table links"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-links.sql
+
+  - changeSet:
+      id: "7"
+      author: Filimonov Artem
+      comment: "create table vacancies"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-vacancies.sql
+
+  - changeSet:
+      id: "8"
+      author: Filimonov Artem
+      comment: "create table tests"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-tests.sql
+
+  - changeSet:
+      id: "9"
+      author: Filimonov Artem
+      comment: "create table results"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-results.sql
+
+  - changeSet:
+      id: "10"
+      author: Filimonov Artem
+      comment: "create table vacancies_tests"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-vacancies-tests.sql
+
+  - changeSet:
+      id: "11"
+      author: Filimonov Artem
+      comment: "create table test_blocks"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-test-blocks.sql
+
+  - changeSet:
+      id: "12"
+      author: Filimonov Artem
+      comment: "create table test_block_answers"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-test-block-answers.sql
+
+  - changeSet:
+      id: "13"
+      author: Filimonov Artem
+      comment: "create table user_answers"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-user-answers.sql
+
+  - changeSet:
+      id: "14"
+      author: Filimonov Artem
+      comment: "create table vacancies-tests"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-table-vacancies-tests.sql
+
+  - changeSet:
+      id: "15"
+      author: Filimonov Artem
+      comment: "create sequences"
+      changes:
+        - sqlFile:
+            splitStatements: true
+            path: db/changelog/1/create-sequences.sql
