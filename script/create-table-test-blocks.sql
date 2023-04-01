@@ -1,4 +1,4 @@
-create table if not exists test_blocks
+create table if not exists platform_test.test_blocks
 (
     -- common test block
     id              bigint      not null
@@ -8,5 +8,5 @@ create table if not exists test_blocks
     question_weight integer     not null,
     question        text        not null,
     constraint test_blocks_idx unique (test_id, id),
-    foreign key (test_id) references tests (id) on delete cascade
+    foreign key (test_id) references platform_test.tests (id) on delete cascade
 );

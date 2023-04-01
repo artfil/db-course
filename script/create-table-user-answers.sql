@@ -1,4 +1,4 @@
-create table if not exists user_answers
+create table if not exists platform_test.user_answers
 (
     id            bigint not null
         constraint user_answers_pkey primary key,
@@ -7,5 +7,6 @@ create table if not exists user_answers
     answer_index  integer,
     answer        text,
     match_answer  text,
-    foreign key (test_block_id) references test_blocks (id) on delete cascade
+    foreign key (test_block_id) references platform_test.test_blocks (id) on delete cascade,
+    foreign key (result_id) references platform_test.results (id) on delete cascade
 );

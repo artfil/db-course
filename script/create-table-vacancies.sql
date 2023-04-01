@@ -1,4 +1,4 @@
-create table if not exists vacancies
+create table if not exists platform_company.vacancies
 (
     id            bigint                  not null
         constraint vacancies_pkey primary key,
@@ -8,5 +8,5 @@ create table if not exists vacancies
     published     boolean   default false not null,
     description   text,
     constraint vacancies_idx unique (company_id, id),
-    foreign key (company_id) references companies (id) on delete cascade
+    foreign key (company_id) references platform_company.companies (id) on delete cascade
 );

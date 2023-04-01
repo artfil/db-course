@@ -1,4 +1,4 @@
-create table if not exists results
+create table if not exists platform_test.results
 (
     id                bigint                  not null
         constraint results_pkey primary key,
@@ -9,7 +9,7 @@ create table if not exists results
     correct_answers   integer                 not null,
     incorrect_answers integer                 not null,
     pass              boolean                 not null,
-    constraint results_idx unique (user_id, vacancy_id),
-    foreign key (vacancy_id) references vacancies (id) on delete cascade,
-    foreign key (user_id) references users (id) on delete cascade
+    constraint results_idx unique (user_id, vacancy_id, id),
+    foreign key (vacancy_id) references platform_company.vacancies (id) on delete cascade,
+    foreign key (user_id) references platform_user.users (id) on delete cascade
 );

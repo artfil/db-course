@@ -1,4 +1,4 @@
-create table if not exists companies
+create table if not exists platform_company.companies
 (
     id          bigint      not null
         constraint companies_pkey primary key,
@@ -7,6 +7,6 @@ create table if not exists companies
     description text,
     logo        bytea,
     constraint companies_idx unique (user_id, id),
-    foreign key (user_id) references users (id) on delete cascade
+    foreign key (user_id) references platform_user.users (id) on delete cascade
 );
-create unique index companies_unique_name_idx on companies (name);
+create unique index companies_unique_name_idx on platform_company.companies (name);

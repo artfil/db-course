@@ -1,4 +1,4 @@
-create table if not exists users
+create table if not exists platform_user.users
 (
     -- common user
     id             bigint                  not null
@@ -14,4 +14,4 @@ create table if not exists users
     -- candidate user
     birth_date     timestamp
 );
-create unique index users_unique_email_idx on users (register_email);
+create unique index users_unique_email_idx on platform_user.users (register_email);
