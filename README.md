@@ -15,8 +15,10 @@ Course practice - work with relational and non-relational databases
 - <a href="task/7/7.md">7</a>
 - <a href="task/8/8.md">8</a>
 - <a href="task/9/9.md">9</a>
+- <a href="task/10/10.md">10</a>
 
 ***
 
 ### Info:
+
 - #### <a href="https://otus.ru/lessons/subd">About course </a>
