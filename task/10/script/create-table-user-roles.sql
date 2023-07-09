@@ -1,6 +1,6 @@
 create table if not exists user_roles
 (
-    user_id int unsigned not null auto_increment primary key,
+    user_id int unsigned not null,
     role    varchar(50),
     constraint user_roles_idx unique (user_id, role),
     foreign key (user_id) references users (id) on delete cascade
