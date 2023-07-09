@@ -5,6 +5,7 @@ create table if not exists contacts
     channel    varchar(50)  not null,
     name       varchar(50)  not null,
     connection varchar(255) not null,
+    fulltext (channel, connection),
     constraint contacts_idx unique (user_id, id),
     foreign key (user_id) references users (id) on delete cascade
 );
